@@ -1,0 +1,1 @@
+num1, num2, nome, nome1, nome2, nomeAluno, sobrenomeAluno, aprovado
