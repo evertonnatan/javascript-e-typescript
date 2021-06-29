@@ -10,3 +10,12 @@ Sobrepeso, quando o resultado está entre 24,9 e 30 kg/m2;
 Obesidade, quando o resultado é maior que 30 kg/m2.
 
 */
+
+// 1ª coisa a se fazer: parar o envio do formulário:
+
+const form = document.querySelector("#formulario")
+
+function recebeEventoForm(event) {
+    event.preventDefault();
+}
+
