@@ -18,4 +18,23 @@ const [um, dois, tres, ...resto] = numerais;
 console.log( primeiroNumero, segundoNumero, terceiroNumero, quartoNumero, quintoNumero, sextoNumero, setimoNumero, oitavoNumero, nonoNumero);
 // OU PODEMOS USAR O OPERADOR REST:
 console.log( um, dois, tres, ...resto);
-// PULANDO VALORES:
+
+
+// DESESTRUTURAÇÃO DE UM OBJETO:
+
+const pessoa = {
+    nome: 'Everton',
+    sobrenome: 'Natã',
+    idade: 30,
+    endereco: {
+        rua: 'Av. Brasil',
+        numero: 1500
+    }
+};
+
+// ATRIBUIÇÃO VIA DESESTRUTURAÇÃO:
+const { nome, sobrenome } = pessoa;
+console.log(nome, sobrenome);
+
+const {endereco: {rua: r = 123456, numero}} = pessoa; // nesse caso, atribuí o valor de rua à variável 'r'. Caso não haja a variável 'r', ser-lhe-á atribuído o valor padrão "123456"
+console.log(r);
