@@ -18,6 +18,10 @@ function numero (num) {
     } else {
         return num
     }
+    
 }
-console.log(numero(30));
+
+for (let i = 0; i <= 100; i++) {
+    console.log(i, numero(i));
+}
 
