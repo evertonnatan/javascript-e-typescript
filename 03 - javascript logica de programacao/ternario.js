@@ -22,7 +22,7 @@ console.log(qualidadeDoFilme);
  * recebe dois argumentos, largura (x) e altura (y) de uma imagem (number).
  * A função deve retornar true se a imagem estiver no modo paisagem.
  */
-
+// MINHA RESOLUÇÃO:
 function ePaisagem (x, y) {
     if (x > y) {
         return true
@@ -31,3 +31,7 @@ function ePaisagem (x, y) {
     }
 }
 console.log(ePaisagem(5, 6));
+
+// RESOLUÇÃO DO PROFESSOR (com arrow function):
+const ePaisagem2 = (largura, altura) => largura > altura;
+console.log(ePaisagem2(1920, 1080));
