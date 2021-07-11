@@ -14,3 +14,20 @@ const imdb = 8;
 
 const qualidadeDoFilme = imdb >= 7 ? "Filme bom" : "Filme ruim";
 console.log(qualidadeDoFilme);
+
+// EXERCÍCIO DA AULA 26:
+
+/**
+ * Escreva uma função chamada 'ePaisagem' que 
+ * recebe dois argumentos, largura (x) e altura (y) de uma imagem (number).
+ * A função deve retornar true se a imagem estiver no modo paisagem.
+ */
+
+function ePaisagem (x, y) {
+    if (x > y) {
+        return true
+    } else {
+        return false
+    }
+}
+console.log(ePaisagem(5, 6));
