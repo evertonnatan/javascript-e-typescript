@@ -25,3 +25,4 @@ for (let i = 0; i <= 100; i++) {
     console.log(i, numero(i));
 }
 
+// Testando a conexão com o repositório
