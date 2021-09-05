@@ -3,6 +3,7 @@
 Basicamente, callback é um tipo de função que só é executada após o processamento de outra função. 
 Na linguagem JavaScript, quando uma função é passada como um argumento de outra, ela é, então, chamada de callback.
  * 
+https://blog.betrybe.com/tecnologia/callback/
  */
 
 
