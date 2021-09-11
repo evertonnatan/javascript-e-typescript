@@ -26,3 +26,5 @@ function conta(operador, acumulador, ...numeros) {
     console.log(acumulador);
 }
 conta('*', 1,20,30,40,50);
+
+// testando a conexão com o code-server
