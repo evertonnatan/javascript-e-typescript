@@ -1,4 +1,6 @@
-//
+// https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+// O método splice() altera o conteúdo de uma lista, adicionando novos elementos enquanto remove elementos antigos.
+
 const nomes = ['Maria', 'João', 'Eduardo', 'Gabriel', 'Julia'];
 
 // nomes.splice(indice, delete, elem1, elem2, elem3);
