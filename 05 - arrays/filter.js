@@ -27,4 +27,26 @@ const pessoas = [
     { nome: "Letícia", idade: 19 },
     { nome: "Rosana", idade: 32 },
     { nome: "Wallace", idade: 47 },
-]
+];
+
+const pessoasComNomeGrande = pessoas.filter(function(name) {
+    if(name.nome.length >= 5) {
+        return true
+    }
+});
+
+const pessoasComMaisDeCinquentaAnos = pessoas.filter(function(age) {
+    if(age.idade > 50) {
+        return true
+    }
+});
+
+const pessoasQueTerminamComA = pessoas.filter(function(letraFinal) {
+    if(letraFinal.nome.toLowerCase().endsWith('a')) {
+        return true
+    }
+})
+
+console.log(pessoasComNomeGrande);
+console.log(pessoasComMaisDeCinquentaAnos);
+console.log(pessoasQueTerminamComA);
