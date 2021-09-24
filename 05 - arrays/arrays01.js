@@ -59,4 +59,4 @@ console.log(elements.join(''));
 console.log(elements.join('-'));
 // expected output: "Fire-Air-Water"
 
-// REFERÊNCIA 2: https://www.w3schools.com/jsref/jsref_splice.asp
+// REFERÊNCIA 2: https://www.w3schools.com/jsref/jsref_splice.asp 
