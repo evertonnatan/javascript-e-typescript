@@ -44,3 +44,44 @@ const comId = pessoas.map(function(obj, indice) {
 })
 
 console.log(comId)
+
+// Outro Exemplo:
+
+let numeros1 = [1, 2, 3, 4, 5]; //vetor original
+
+let quadrados = numeros1.map(function(item){
+   return Math.pow(item, 2); //retorna o item original elevado ao quadrado
+});
+
+console.log(quadrados); //imprime 1,4,9,16,25
+
+// No exemplo a seguir mapeamos um array de objetos e retornamos apenas uma propriedade de cada item:
+
+var vencedores = [
+    {
+        nome : "Equipe Super",
+        pais : "Brasil"
+    },
+    {
+        nome : "Time Maximo",
+        pais : "EUA"
+    },
+    {
+        nome : "Mega Grupo",
+        pais : "Canadá"
+    }
+ ];
+ 
+ var podioPorPais = vencedores.map(function(item, indice){
+    return item.pais;
+ });
+ 
+ console.log(podioPorPais); // [ 'Brasil', 'EUA', 'Canadá' ]
+
+ /**Map x Foreach
+Os arrays em JavaScript possuem um outro método, chamado forEach, que às vezes confunde os desenvolvedores iniciantes 
+quanto às diferenças entre ele e o map. 
+Ambos percorrem o vetor original e para cada item podem executar um determinado procedimento, 
+porém as semelhanças são apenas essas. O método forEach tem o objetivo apenas de iterar sobre um array, 
+enquanto o map usa essa iteração como meio para chegar ao seu objetivo final, que é obter um novo array resultante do 
+mapeamento do original. */
