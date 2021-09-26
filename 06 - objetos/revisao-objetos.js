@@ -1,3 +1,4 @@
+// Os objetos podem ser criados com objetos literais, com a palavra-chave  new  e (em ECMAScript 5) com a função  Object.create().
 // NOTAÇÕES DE PONTO OU DE COLCHETES
 /**https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Property_Accessors
  * 
