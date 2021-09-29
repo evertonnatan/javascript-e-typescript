@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Localhost</title>
+</head>
+<body>
+
+    <p>O termo "<strong>Herança</strong>" é muito usado para descrever que as características de um objeto são passadas para outro objeto. 
+        Assim como uma filha ou filho pode herdar características da sua mãe ou pai (geneticamente). 
+        Por isso estamos usando esse termo para descrever o comportamento desejado. Além disso, a maioria das literaturas, 
+        incluindo as documentações (como <a href="https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/Heran%C3%A7a" rel="noopener noreferrer" target="_blank">MDN</a>) 
+        citam a palavra herança. 
+        <br>
+        <br>
+    </p>
+    
+    <p>Vamos continuar usando o termo "<strong>Herança</strong>" até o final do curso, porém, Javascript não é uma linguagem que apresenta essa característica em específico, 
+        portanto não existe "<strong>herança</strong>" aqui. O que ocorre, na verdade, é "<strong>delegação</strong>". Esse seria o termo mais correto para descrever "<strong>Herança</strong>" em JS.</p>
+        
+    <p>Quando fazemos algo como:</p><pre class="prettyprint linenums">function Produto(nome, preco) {
+        this.nome = nome;
+        this.preco = preco;
+      }
+      
+      Produto.prototype.aumento = function (quantia) {
+        this.preco += quantia;
+      };
+      
+      function Camiseta(nome, preco, cor) {
+        Produto.call(this, nome, preco);
+        this.cor = cor;
+      }
+      Camiseta.prototype = Object.create(Produto.prototype);
+      Camiseta.prototype.constructor = Camiseta;</pre><p>Mais especificamente no trecho:</p><pre class="prettyprint linenums">Camiseta.prototype = Object.create(Produto.prototype);</pre><p>Estamos, claramente, falando que o <code>Camiseta.prototype</code> é um novo objeto vazio que tem como protótipo <code>Produto.prototype</code>. Dessa forma, estamos adicionando <code>Camiseta.prototype</code> na cadeia de protótipos de <code>Produto</code>. Por consequência, tudo o que não existir em <code>Camiseta</code> nem em <code>Camiseta.prototype</code> será delegado para <code>Produto.prototype</code> (e assim por diante até chegar no topo da cadeia de protótipos). Por isso vejo o termo delegação como mais adequado para este comportamento.</p><p>Novamente, vamos continuar usando o termo "<strong>Herança</strong>", mas achei que seria interessante que você soubesse disso neste momento.</p>
+
+    <script src="/06 - objetos/heranca.js"></script>
+    
+</body>
+</html>
